@@ -27,3 +27,6 @@ pnpm-debug.log*
 
 # typescript
 *.tsbuildinfo
+
+# --- Custom ---
+wp-divi-layout-maker.txt
