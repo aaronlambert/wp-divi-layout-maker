@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #f5f7fb; color: #0f172a; }
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 2rem auto 4rem;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #dbe2ef;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+textarea, input[type="text"], input[type="file"] {
+  width: 100%;
+}
+
+pre {
+  background: #0b1020;
+  color: #d4def4;
+  padding: 1rem;
+  overflow: auto;
+  border-radius: 8px;
+  max-height: 400px;
+}
+
+button {
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+}
+
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
